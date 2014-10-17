@@ -31,39 +31,39 @@
 */
 body {
 	font-family: Helvetica, Tahoma, Arial, sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	height:100%;
-	line-height: 18px;
+	line-height: 24px;
 	margin: 0;
 	padding: 0;
 	background: #fff;
 	margin-top: 50px;
 }
 .full-width-image-1 {
-	background: url(images/2.jpg) no-repeat bottom center fixed;
+	background: url(images/intro-bg.jpg) no-repeat center center fixed;
 	background-size: cover;
 	text-align: center;
-	height: 65%;
+	height: 100%;
 	margin-top: -50px;
+	margin-bottom: -100px;
 }
 /* Pricing Tables */
 .pricing-tables .plan {
-  border-radius: 4px;
   list-style: none;
   margin: 0 0 20px;
-  background: rgba(250,250,250,1.5);
+  background: rgba(255,255,255,0.9);
   text-align: center;
   padding: 30px 0;
-  border: 1px solid #e1e1e1;
-  -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+  border: 7px solid #fff;
+  -webkit-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+  -moz-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+  box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
 }
 .pricing-tables .plan:hover {
-	background: #e1e1e1;
-    -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    -webkit-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+    -moz-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+    box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
 }
 .pricing-tables .plan li {
   padding: 5px;
@@ -81,6 +81,7 @@ body {
 }
 .pricing-tables .plan li.plan-name h3 {
   margin: 0;
+  min-height: 52px;
 }
 .pricing-tables .plan li.plan-price {
   margin-bottom: 10px;
@@ -105,32 +106,40 @@ body {
   display: block;
   font-size: 11px;
 }
+.pricing-tables .plan li.plan-details {
+  min-height: 260px;
+}
 .pricing-tables .plan li.plan-action {
   margin-top: 10px;
   border-top: 0;
 }
 .pricing-tables .plan.featured {
-  background-color: rgba(250,250,250,1.5);
+  background-color: rgba(255,255,255,0.9);
+  -webkit-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+  -moz-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+  box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
 }
 .pricing-tables .plan.featured:hover {
-  background-color: #e1e1e1;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+  -moz-box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
+  box-shadow: 3px 3px 0px rgba(255,255,255,0.9);
 }
+
 /* Social buttons */
 .social-intro{
-	background: url(images/2.jpg) no-repeat bottom center fixed;
-	background-size: cover;
 	text-align: center;
-	height: 35%;
+	margin-top: 1%;
 }
-.social-intro a.next {background:url(images/arrow.png) no-repeat center center;background-size:30px;text-align:center;height:30px;width:100%;left:0;bottom:10px;position:absolute;}
-.social-intro .soc-item { width:100%; height: 180px; background: rgba(213,221,222,0.9);}
+.social-intro a.next {background:url(images/arrow.png) no-repeat center center;background-size:30px;text-align:center;height:30px;width:100%;left:0;bottom:35px;position:absolute;}
+.social-intro .soc-item { width:100%; height: 170px; background: rgba(213,221,222,0.9);}
 .social-intro .soc-item.facebook a{ background-image:url(images/fb.png); background-position-x: 35px; }
-.social-intro .soc-item a{display:block;height:180px;margin-bottom:0;background-position:50% 50%;background-repeat:no-repeat;font-size:22px;position:relative;overflow:hidden;text-decoration:none;}
+.social-intro .soc-item a{display:block;height:170px;margin-bottom:0;background-position:50% 50%;background-repeat:no-repeat;font-size:22px;position:relative;overflow:hidden;text-decoration:none;}
 .social-intro .soc-item a span{color:#fff;visibility:hidden;position:absolute}
 .social-intro .soc-item a span.name{bottom:25px;left:20px}
-.social-intro .soc-item a .fb-post {top:55px;}
+.social-intro .soc-item a .fb-post {top:40px;}
 
-.social{background-color:#d5ddde}
+.social{background-color:#d5ddde; border-top: 7px solid #ffffff;}
 .social .soc-item{width:33%;float:right}
 .social .soc-item a{display:block;height:220px;background-color:#d5ddde;background-position:50% 50%;background-repeat:no-repeat;font-size:22px;position:relative;overflow:hidden;text-decoration:none}
 .social .soc-item a span{color:#fff;visibility:hidden;position:absolute}
@@ -138,13 +147,13 @@ body {
 .social .soc-item a span.fb-count{bottom:28px;font-size:28px;left:0;right:0;text-align:center}
 .social .soc-item a:hover,.social .soc-item a:focus{text-decoration:none;border-bottom:none}
 .social .soc-item a:hover span,.social .soc-item a:focus span{visibility:visible}
-.social .soc-item.facebook a{background-image:url(images/fb.png);background-position-y:75px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.2)}
+.social .soc-item.facebook a{background-image:url(images/fb.png);background-position-y:75px;border-bottom:none;}
 .social .soc-item.facebook a:hover,.social .soc-item.facebook a:focus{background-color:#016bb6}
-.social .soc-item.twitter a{background-image:url(images/tw.png);background-position-y:0px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.4)}
+.social .soc-item.twitter a{background-image:url(images/tw.png);background-position-y:0px;border-bottom:none;}
 .social .soc-item.twitter a:hover,.social .soc-item.twitter a:focus{background-color:#08c1e2}
-.social .soc-item.in a{background-image:url(images/linkedin.png);background-position-y:75px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.4)}
+.social .soc-item.in a{background-image:url(images/linkedin.png);background-position-y:75px;border-bottom:none;}
 .social .soc-item.in a:hover,.social .soc-item.in a:focus{background-color:#4875B4}
-.social .soc-item.google a{background-image:url(images/gplus.png);background-position-y:77px;border-bottom:none;border-top:1px solid rgba(255,255,255,0.2)}
+.social .soc-item.google a{background-image:url(images/gplus.png);background-position-y:77px;border-bottom:none;}
 .social .soc-item.google a:hover,.social .soc-item.google a:focus{background-color:#d94b34}
 .social .soc-item-holder{overflow:hidden}
 .social .soc-item-holder .soc-item{width:50%}
@@ -183,6 +192,12 @@ body {
 }
 .social .soc-item.facebook a.post{background-image:none;}
 a.post span.name{line-height:24px;}
+.social-intro .soc-item, .social-intro .soc-item a { height: 150px; }
+.social-intro .soc-item.facebook a{background-image:none;}
+.social-intro .soc-item a .fb-post { display: none; }
+.social-intro .soc-item a span.name{top:30px;left:35px}
+.social-intro a.next {bottom:40px;}
+.message-box { margin-top: 50px !important; }
 }
 
 /*
@@ -197,9 +212,9 @@ margin: 0 0 20px 0;
 .project .port-item {
 padding: 0;
 overflow: hidden;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
 -webkit-background-clip: padding-box;
 -moz-background-clip: padding;
 background-clip: padding-box;
@@ -228,10 +243,11 @@ position: relative;
 }
 .port-item {
 position: relative;
+padding: 0;
 overflow: hidden;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
 -webkit-background-clip: padding-box;
 -moz-background-clip: padding;
 background-clip: padding-box;
@@ -309,7 +325,6 @@ background: url(images/icon-link.png) center center no-repeat;
        -o-transition-duration: 0s;
           transition-duration: 0s;
 }
-
 </style>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -332,31 +347,6 @@ background: url(images/icon-link.png) center center no-repeat;
   js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&appId=257246281110093&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-      <div class="menu">
-        <div class="navbar-header">
-          <button type="button" class="btn btn-primary btn-lg navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <i class="icon-reorder"></i>
-          </button>
-          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
-          <a class="navbar-brand" href="#">MPBèta</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#over">Over MPBèta</a></li>
-            <li><a href="#webdesign">Webdesign</a></li>
-            <li><a href="#kosten">Kosten</a></li>
-            <li><a href="#webfolio">Webfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div>
-      </div><!-- /.container -->
-    </nav>
 
 	<div class="full-width-image-1" style="padding:0;">
       <div class="container">
@@ -370,9 +360,9 @@ background: url(images/icon-link.png) center center no-repeat;
 					<div class="right-col flexslider home-slider" style="z-index:1;">
 						<ul class="slides">
 											
-							<li style="display: block;" class="flex-active-slide"><p>Designer</p></li>
+							<li style="display: block;" class="flex-active-slide"><p>Developer</p></li>
 							
-							<li style="display: block;" class=""><p>Developer</p></li>
+							<li style="display: block;" class=""><p>Designer</p></li>
 							
 							<li style="display: block;" class=""><p>Expert</p></li>
 
@@ -382,132 +372,181 @@ background: url(images/icon-link.png) center center no-repeat;
 				</div><!--End message-box -->
         
       </div>
+      <section class="social-intro">
+          <div class="container">      
+          <div class="soc-item facebook">
+            <a class="post" href="#social" target="_blank">
+            <p class="fb-post">
+            </p>
+            <span class="name" style="text-align:right"><div class="fb-like" data-href="https://facebook.com/mpbeta.nl" data-width="100%" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></span>
+            </a>
+          </div>
+          </div>
+          <a href="#over" class="next"></a>
+      </section>
     </div><!-- /full-width-image-1 -->
     
-<section class="social-intro">
-  <div class="container">      
-  <div class="soc-item facebook">
-	<a class="post" href="#social" target="_blank">
-	<p class="fb-post">
-	</p>
-    <span class="name" style="text-align:right"><div class="fb-like" data-href="https://facebook.com/mpbeta.nl" data-width="100%" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></span>
-	</a>
-  </div>
-  </div>
-  <a href="#over" class="next"></a>
-</section>
+     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+      <div class="menu">
+        <div class="navbar-header">
+          <button type="button" class="btn btn-primary btn-lg navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="icon-reorder"></i>
+          </button>
+          <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+          <a class="navbar-brand" href="#">MPBèta</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#over">Over MPBèta</a></li>
+            <li><a href="#webdesign">Webdesign</a></li>
+            <li><a href="#kosten">Kosten</a></li>
+            <li><a href="#webfolio">Webfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+      </div><!-- /.container -->
+    </nav>
     
     <a name="over"></a>
-    
     <!-- Callout -->
-    <div class="callout" style="padding:85px 0; background: url(images/intro-bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+    <div class="callout" style="padding: 85px 0 0 0; color: #000; background: #fff; ">
       <div class="container" style="text-align:center; ">
       	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-            <h1 class="text-block">Over MPBèta</h1>
+            <h1 class="text-block" style="color:#000000;">Over MPBèta</h1>
         </div>
       </div>
     </div>
     <!-- /Callout -->
     
     <div class="container">
-      <div class="row">
-         <div class="section">
-         <div class="col-lg-12">
-            <a href="#kosten"><div class="alert alert-danger pull-right" style="margin:20px; ">
+       <div class="section">
+         <div class="row">
+         <div class="col-lg-4">
+            <h1>MPBèta is een jong bedrijf.</h1>
+            <a href="#kosten"><div class="alert alert-danger pull-right" style="margin:0px; ">
             <h4>Website vanaf € 299,-</h4>
             Een persoonlijke- of bedrijfswebsite met <abbr title="CMS staat voor contentmanagement- systeem, hiermee kan de gebruiker op een relatief eenvoudige wijze de inhoud (content) kan wijzigen en/of aanvullen zonder dat daarvoor technische kennis vereist is.">CMS</abbr> al vanaf € 299,-.
             </div></a>
-            <h1>Over MPBèta</h1>
-            <p class="section-paragraph">MPBèta is een jong bedrijf, gespecialiseerd op het gebied van webdesign en webdevelopment.</p>
+         </div>
+         <div class="col-lg-8">
             <p class="lead section-lead">MPBèta is zeer veelzijdig!</p>
+            <p class="section-paragraph">MPBèta is opgericht in 2013 en gespecialiseerd op het gebied van webdesign en webdevelopment. Wij maken allerlei weboplossingen en webapplicaties! Meer informatie over MPBèta vindt u op deze website.</p>
             <p>Bij MPBèta kan men denken aan webdesign en webdevelopment zoals eerder genoemd. Wij maken voor u een weboplossingen of een webapplicatie. Wij kunnen naast webhosting ook de aanvraag van een domeinnaam voor u verzorgen. Verder kunt u bij ons terecht voor grafische ontwerpen, terwijl u ons tenslotte ook kunt vragen een bepaalde technische klus voor u uit te voeren. Wij zijn gevestigd in Eindhoven, maar wij beperken ons zeker niet tot klanten uit alleen regio Eindhoven.</p>
-            <div class="alert alert-info" style="margin:20px; font-family:Georgia,Times New Roman,Times,serif; ">
-            <strong>bè·ta</strong> (meervoud: bèta’s)
-<strong><br />
-1</strong> (de; v(m)) tweede letter van het Griekse alfabet
-<strong><br />
-2</strong> (de; m,v) leerling van de bèta-afdeling
-<strong><br />
-3</strong> (de; m,v) iemand met een voorkeur voor wiskunde en natuurwetenschappen, c.q. iemand die een opleiding volgt die daarop gericht is
-            </div>
-            <p class="lead section-lead"><img src="images/michiel bouw.jpg" class="img-circle img-responsive" style="height:150px; margin:0px 20px 20px 20px; " align="right" />Michiel Bouw</p>
+         </div>
+         </div>
+         <hr>
+         <div class="row">
+         <div class="col-lg-8">
+            <p class="lead section-lead">Michiel Bouw</p>
             <p>Mijn naam is Michiel Bouw en ik ben het brein achter dit bedrijf. Letterlijk gezien ben ik de bèta. Ik ben opgegroeid in Barneveld en verhuisd naar Eindhoven om te gaan studeren. Ben begonnen aan een studie Technische Natuurkunde, maar ik bleek toch een hele andere passie te hebben. Nu ben ik student Software Science (faculteit Computer Science and Engineering) aan de Technische Universiteit Eindhoven.</p>
             <p>Ik wilde meer doen met mijn hobby, dus daarom heb ik dit bedrijf gestart, om zo meer te halen uit dingen die ik naast mijn studie leuk vind om te doen. Webdesign en programmeren vind ik vooral erg leuk om te doen en ik zal dit ook blijven doen voor mijn plezier. Het is vooral gaaf om telkens nieuwe technieken en manieren van programmeren te leren en mijzelf daarin te verbeteren.</p>
           </div>
+          <div class="col-lg-4">
+          	<img src="images/michiel bouw.jpg" class="img-circle img-responsive" style="width:80%; height:auto; margin:0px 20px 20px 20px; " align="left" />
+          </div>
+          
           </div>
       </div>
     </div>
     
-    <a name="webdesign"></a>
-    
     <!-- Callout -->
-    <div class="callout" style="padding:85px 0; background: url(images/macbook.jpg) no-repeat bottom center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+    <div class="callout" style="padding-top: 5%; height: 50%; background: url(images/macbook-mpbeta.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
       <div class="container" style="text-align:center; ">
       	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-            <h1 class="text-block">Webdesign</h1>
+            <h1 class="text-block">Maatwerk? Uiteraard kan dat!</h1>
+        </div>
+      </div>
+    </div>
+    <!-- /Callout -->
+    <a name="webdesign"></a>
+    <!-- Callout -->
+    <div class="callout" style="padding: 85px 0 0 0; color: #000; background: #fff; ">
+      <div class="container" style="text-align:center; ">
+      	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+            <h1 class="text-block" style="color: #000;">Webdesign</h1>
         </div>
       </div>
     </div>
     <!-- /Callout -->
     
     <div class="container">
-       <div class="row">
-          <div class="section">
+       <div class="section">
+          <div class="row">
           <div class="col-lg-12">
-            <h1>Webdesign</h1>
-            <p class="section-paragraph">Bij webdesign kan men aan veel verschillende dingen denken, afhankelijk van wat het doel is van de website kan hierbij een geschikt platform gebruikt worden. Enkele mogenlijkheden worden hieronder verder toegelicht.</p>
-            <p>&nbsp;</p>
+            <p class="section-paragraph">Bij webdesign kan men aan veel verschillende dingen denken, afhankelijk van wat het doel is van de website kan hierbij een geschikt platform gebruikt worden. Enkele mogenlijkheden worden hieronder verder toegelicht.<sup>1</sup></p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img src="images/html.png" style="width:80%;"/>
+          </div>
+          <br>
+          <div class="row">
+          <div class="col-lg-4 text-center">
+            <img src="images/html.png" style="width: 60%;"/>
+          </div>
+          <div class="col-lg-8 text-right">
             <h1>HTML/CSS</h1>
             <p>Wij bouwen HTML gebaseerde website's die werken met elke mogelijke internet browser. Op ieder apparaat zal de website volledig werken.</p>
             <p>Voor onze website's maken wij gebruik van de nieuwste snufjes op het gebied van codering. Wij maken daarom ook gebruik van de nieuwste versie van HTML en CSS. Respectievelijk HTML5 en CSS3.</p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img src="images/responsive.jpg" style="width:80%;"/>
+          </div>
+          <hr>
+          <div class="row">
+          <div class="col-lg-8">
             <h1>Responsive design</h1>
             <p>Onze website's zijn volledig resposive. Dat wil zeggen dat de website's zich aanpassen aan de schermgrootte van het door u gebruikte apparaat. Bij kleine schermen, denk aan een smartphone of tablet, zal de webpagina gedeeltelijk reorganiseren om alles goed leesbaar te houden.</p>
             <p>Dus ook mobiel zullen onze website's volledig werken. Wat voor een merk u ook heeft.</p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img src="images/WP.jpg" style="width:80%; "/>
+          <div class="col-lg-4 text-center">
+            <img src="images/responsive.jpg" style="width: 60%;"/>
+          </div>
+          </div>
+          <hr>
+          <div class="row">
+          <div class="col-lg-4 text-center">
+            <img src="images/WP.jpg" style="width: 60%;"/>
+          </div>
+          <div class="col-lg-8 text-right">
             <h1>WordPress</h1>
             <p>WordPress is een persoonlijk publicatieplatform gericht op gebruiksgemak. Oorspronkelijk ontworpen voor een weblog, maar uitgegroeid tot een zeer uitgebreid systeem voor websites.</p>
             <p>WordPress is een contentmanagementsysteem (CMS) waardoor de gebruiker op een relatief eenvoudige wijze de inhoud (content) van een website kan wijzigen en/of aanvullen zonder dat daarvoor technische kennis vereist is.</p>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <img src="images/angularjs.png" style="width:80%; "/>
+          </div>
+          <hr>
+          <div class="row">
+          <div class="col-lg-8">
             <h1>Maatwerk</h1>
-            <p>Wij maken voor u een web oplossingen of een webapplicatie. Volledig aangepast aan uw wensen, met een op maat gemaakt design.</p>
+            <p>Wij maken voor u een web oplossingen of een webapplicatie. Volledig aangepast aan uw wensen, met een op maat gemaakt design. Maatwerk ook met WordPress CMS mogelijk!</p>
             <p>Afhankelijk van uw wensen kan hiervoor het juiste framework voor gekozen worden.</p>
             <p>Er zijn verschillende zogeheten frameworks, gebruikte methodes, om een dynamische webapplicatie te maken. Wij maken voor u een perfecte dynamische webapplicatie met bijvoorbeeld AngularJS, die gebruikt maakt van JavaScript code.</p>
           </div>
-          <div class="col-lg-12">
-          <p><br />Kijk voor een indicatie van de kosten voor uw weboplossing naar het overzicht van de <a href="#kosten">kosten</a> hieronder.</p>
+          <div class="col-lg-4 text-center">
+            <img src="images/angularjs.png" style="width: 60%;"/>
           </div>
+          </div>
+          <div class="col-lg-12">
+          <br /><br />	
+          <p align="right"><small><sup>1</sup> Kijk voor een indicatie van de kosten voor uw weboplossing naar het overzicht van de <a href="#kosten">kosten</a> hieronder.</small></p>
           </div>
        </div>
     </div>
     
     <a name="kosten"></a>
-    
     <!-- Callout -->
-    <div class="callout" style="padding:85px 0; background: url(images/9.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+    <div class="callout" style="padding: 85px 0 0 0; background: url(images/9.jpg) no-repeat bottom center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
       <div class="container" style="text-align:center; ">
       	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
             <h1 class="text-block">Kosten</h1>
         </div>
       </div>
-    </div>
-    <!-- /Callout -->
     
     <div class="container">
-       <div class="row">
-          <div class="section">
+       <div class="section">
+       	  <div class="row">
           <div class="col-lg-12">
-            <h1>Kosten</h1>
-            <p class="section-paragraph">De kosten<sup> 1</sup> voor het maken van verschillende soorten websites zijn hieronder samengevat.</p>
+            <p class="section-paragraph" style="color: #ffffff;">De kosten<sup> 1</sup> voor het maken van verschillende soorten websites zijn hieronder samengevat.</p>
 <!-- Begin Pricing Tables -->
 <div class="row pricing-tables">
             
@@ -526,11 +565,7 @@ background: url(images/icon-link.png) center center no-repeat;
 	<li>Een WordPress CMS website gemaakt met (standaard) bestaand template. Of een HTML based website zonder CMS.</li>
 	<li><strong>Binnen enkele dagen een website!</strong></li>
 	<li></li>
-	<li></li>
 </ul></li>
-          <li class="plan-button-box">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-          </li>
         </ul>
       </div>
             
@@ -546,14 +581,9 @@ background: url(images/icon-link.png) center center no-repeat;
           </li>
           <li class="plan-details"><ul>
 	<li><strong>Kleinzakelijke/eenvoudige website.</strong></li>
-	<li>Vanaf € 499,- heeft u al een eenvoudige website met het WordPress CMS.</li>
-    <li>Design van een bestaand template speciaal voor u aangepast.</li>
+	<li>Vanaf € 499,- heeft u al een eenvoudige website met het WordPress CMS. Op basis van bestaand template.</li>
 	<li>De totale prijs is afhankelijk van uw wensen.</li>
-	<li></li>
 </ul></li>
-          <li class="plan-button-box">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-          </li>
         </ul>
       </div>
             
@@ -572,11 +602,7 @@ background: url(images/icon-link.png) center center no-repeat;
 	<li>Vanaf € 699,- heeft u een professionele website.</li>
     <li>WordPress CMS. Website design en inhoud volledig voor u gemaakt.</li>
 	<li>De totale prijs is afhankelijk van uw wensen.</li>
-	<li></li>
 </ul></li>
-          <li class="plan-button-box">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-          </li>
         </ul>
       </div>
             
@@ -595,38 +621,63 @@ background: url(images/icon-link.png) center center no-repeat;
     <li><strong>Speciaal voor u gemaakt.</strong></li>
 	<li>Met vrijwel alle mogelijke eigenschappen. Voor een totale weboplossing!</li>
 	<li>De totale prijs is afhankelijk van uw wensen.</li>
-	<li></li>
 </ul></li>
-          <li class="plan-button-box">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-          </li>
         </ul>
       </div>
 	  
       </div><!-- Einde Pricing Tables -->
-      		<h3>Domeinnaam, hosting en onderhoud pakket</h3>
+           </div>
+           </div>
+      </div> 
+    </div>
+     
+    </div>
+    <!-- Callout -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+          <div class="col-lg-4 text-right">
+            <h2>Domeinnaam, hosting en onderhoud pakket</h2>
             <p class="lead section-lead">Nu voor € 6,- per maand!</p>
-			<p>Wij verzorgen graag uw domeinnaam aanvraag en de hosting van uw website. Voor elke extra domeinnaam kost dit € 1,- extra per maand.</p>
+          </div>
+          <div class="col-lg-8">
+          	<p>Wij verzorgen graag uw domeinnaam aanvraag en de hosting van uw website. Voor elke extra domeinnaam kost dit € 1,- extra per maand.</p>
             <p>Hierbij zorgen wij ook voor een maandelijkse backup van de website en zorgen wij dat de onderliggende software up to date is. Zo heeft u een goed onderhouden website.</p>
-            <p>&nbsp;</p>
-            <h3>Vindbaarheid (SEO) pakket</h3>
-            <p class="lead section-lead">€ 75,-</p>
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col-lg-8 text-right">
 			<p>Voor € 75,- zorgen wij (eenmalig) voor een optimale vindbaarheid van uw website bij zoekmachines. Wij zorgen ervoor dat de passende zoektermen worden toegevoegd aan uw website.</p>
             <p>Hiernaast voegen wij het Google Analytics systeem toe om, onder andere, de toestroom naar uw website te kunnen monitoren. Hierna kunt u zelf de statistieken van uw website in de gaten blijven houden via Google Analytics.</p>
-            <p>&nbsp;</p>
-            <p align="right"><small><sup>1</sup> Alle genoemde prijzen zijn exclusief belasting (BTW), tenzij anders vermeld.</small></p>
           </div>
+          <div class="col-lg-4">
+            <h2>Vindbaarheid (SEO) pakket</h2>
+            <p class="lead section-lead">€ 75,-</p>
           </div>
+      </div>
+      <div class="col-lg-12">
+      <br /><br />	
+      <p align="right"><small><sup>1</sup> Alle genoemde prijzen zijn exclusief belasting (BTW), tenzij anders vermeld.</small></p>
+       </div>
        </div>
     </div>
     
-    <a name="webfolio"></a> 
-    
     <!-- Callout -->
-    <div class="callout" style="padding:85px 0; background: url(images/6.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
+    <div class="callout" style="padding-top: 10%; height: 50%; background: url(images/6.jpg) no-repeat bottom center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; ">
       <div class="container" style="text-align:center; ">
       	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-            <h1 class="text-block">Webfolio</h1>
+            <h1 class="text-block" style="color: #000;">Uw heeft wensen, wij luisteren!</h1>
+        </div>
+      </div>
+    </div>
+    <!-- /Callout -->
+    <a name="webfolio"></a>
+    <!-- Callout -->
+    <div class="callout" style="padding: 85px 0 0 0; color: #000; background: #fff; ">
+      <div class="container" style="text-align:center; ">
+      	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+            <h1 class="text-block" style="color: #000;">Webfolio</h1>
         </div>
       </div>
     </div>
@@ -636,7 +687,6 @@ background: url(images/icon-link.png) center center no-repeat;
        <div class="row">
           <div class="section">
           <div class="col-lg-12">
-            <h1>Webfolio</h1>
             <p class="section-paragraph">Een overzicht van de door MPBèta verrichte projecten vindt u hieronder in het webfolio (ook wel het portfolio genoemd). Hieronder kunt u ook een speciefiek onderdeel kiezen.</p>
         <!-- portfolio filter -->
             <div id="filters" class="btn-group">
@@ -664,6 +714,30 @@ background: url(images/icon-link.png) center center no-repeat;
 				<span class="link-overlay">&nbsp;</span>
 				</div>
 			</div><!-- end portfolio item-->
+            
+            <div class="project col-md-6 col-sm-6 web wordpress design">
+				<div class="port-item link">
+					<a href="http://congres.esrtheta.nl" target="_blank" title="">
+						<img alt="" src="images/web13.png" class="img-responsive">
+					</a>
+					<div class="project-description">
+						<p class="project-name"><b>Sportcongres E.S.R. Thêta</b><br />Volledige WordPress website met eigen design.</p>
+					</div>
+				<span class="link-overlay">&nbsp;</span>
+				</div>
+			</div>
+            
+            <div class="project col-md-6 col-sm-6 web wordpress different">
+				<div class="port-item link">
+					<a href="http://geboortebeer.com" target="_blank" title="">
+						<img alt="" src="images/web12.png" class="img-responsive">
+					</a>
+					<div class="project-description">
+						<p class="project-name"><b>Geboortebeer.com webshop</b><br />Volledige WordPress webshop. Gemaakt in opdracht van Gusto Interactive.</p>
+					</div>
+				<span class="link-overlay">&nbsp;</span>
+				</div>
+			</div>
             
             <div class="project col-md-6 col-sm-6 web wordpress">
 				<div class="port-item link">
@@ -805,23 +879,22 @@ background: url(images/icon-link.png) center center no-repeat;
     </div>
     
     <a name="contact"></a>
-    
     <div class="contact-info">
     <div class="container" style="text-align:center; ">
     	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
     		<h1 class="text-block">Contact</h1>
         </div>
     </div>
-    </div>
     
-	<div class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=mpb%C3%A8ta&amp;aq=&amp;sll=51.451393,5.461997&amp;sspn=0.00448,0.009645&amp;gl=nl&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;cid=12484898034783150203&amp;ll=51.459462,5.470419&amp;spn=0.021391,0.094328&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=mpb%C3%A8ta&amp;aq=&amp;sll=51.451393,5.461997&amp;sspn=0.00448,0.009645&amp;gl=nl&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;cid=12484898034783150203&amp;ll=51.459462,5.470419&amp;spn=0.021391,0.094328&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left"></a></small>
-    </div>
-      
     <div class="container">
       <footer>
       	<div class="row">
-        <div class="top-scroll text-center">
+        <div class="col-md-8">
+        <div class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=mpb%C3%A8ta&amp;aq=&amp;sll=51.451393,5.461997&amp;sspn=0.00448,0.009645&amp;gl=nl&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;cid=12484898034783150203&amp;ll=51.459462,5.470419&amp;spn=0.021391,0.094328&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=mpb%C3%A8ta&amp;aq=&amp;sll=51.451393,5.461997&amp;sspn=0.00448,0.009645&amp;gl=nl&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;t=m&amp;cid=12484898034783150203&amp;ll=51.459462,5.470419&amp;spn=0.021391,0.094328&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left"></a></small>
+    </div>
+        </div>
+        <div class="col-md-4" style="font-size: 18px; letter-spacing: 2px;">
           <h3><strong>MPBèta</strong></h3><p><br>
           Marconilaan 32-L<br>
           5621 AB Eindhoven<br>
@@ -841,14 +914,15 @@ background: url(images/icon-link.png) center center no-repeat;
       </footer>
     </div>
     
-    <a name="social"></a>
+    </div>
     
+    <a name="social"></a>
     <section class="social"><!-- Begin social -->
         <div class="container">
 		<div class="soc-item google"><a href="http://google.com/+MpbetaNlg" target="_blank"><span class="name">Google +</span></a>
 		</div>
 		<div class="soc-item-holder">
-			<div class="soc-item in"><a href="https://www.linkedin.com/company/MPB%C3%A8ta" target="_blank"><span class="name">LinkedIn</span></a>
+			<div class="soc-item in"><a href="https://www.linkedin.com/company/mpbèta" target="_blank"><span class="name">LinkedIn</span></a>
 			</div>
 			<div class="soc-item facebook"><a href="https://facebook.com/mpbeta.nl" target="_blank"><span class="name">Facebook</span><span class="fb-count"></span></a>
 			</div>

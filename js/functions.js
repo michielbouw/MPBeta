@@ -56,33 +56,54 @@ $(function() {
 	});
 
 	jQuery(document).ready(function() {
+		
 		var sOffset = $(".navbar").offset().top;
 		$(window).scroll(function() {
 			var scrollYpos = $(document).scrollTop();
 			if (scrollYpos > sOffset) {
+				$(".full-width-image-1").css({
+					'margin-bottom': '0',
+				});
+				$(".navbar").removeClass('navbar-static-top');
+				$(".navbar").addClass('navbar-fixed-top');
 				$(".navbar").css({
 					'background-color': '#428bca',
-					'margin-top': 0
 				});
 				$(".navbar .container .menu").css({
 					'padding': 0
 				});
 				$(".navbar .navbar-brand").css({
+					'display': 'block',
 					'opacity': 1
+				});
+				$(".navbar .nav").addClass('navbar-right');
+				$(".navbar .nav").css({
+					'margin': '0',
+					'margin-right': '-15px',
 				});
 				$(".navbar-inverse .navbar-nav > li > a").css({
 					'font-size': '16px'
 				});
 			} else {
-				$(".navbar").css({
-					'background-color': 'transparent',
-					'margin-top': '40px'
+				$(".full-width-image-1").css({
+					'margin-bottom': '-100px',
 				});
+				$(".navbar").css({
+					'background': 'transparent',
+				});
+				$(".navbar").removeClass('navbar-fixed-top');
+				$(".navbar").addClass('navbar-static-top');
 				$(".navbar .container .menu").css({
 					'padding': '25px 15px'
 				});
 				$(".navbar .navbar-brand").css({
-					'opacity': 0
+					'opacity': 0,
+					'display': 'none'
+				});
+				$(".navbar .nav").removeClass('navbar-right');
+				$(".navbar .nav").css({
+					'margin': '0',
+					'float': 'none'
 				});
 				$(".navbar-inverse .navbar-nav > li > a").css({
 					'font-size': '24px'
@@ -90,7 +111,7 @@ $(function() {
 			}
 		});
 		
-		$('.message-box').css({'marginTop':$(window).height()*0.3});
+		$('.message-box').css({'marginTop':$(window).height()*0.2});
 
 		$('.home-slider').flexslider({
 			animation: "slide",
@@ -105,4 +126,7 @@ $(function() {
 		$('.fb-count').SocialCounter({ SocialSite: 'Facebook', UName: 'http://facebook.com/mpbeta.nl' });
 		
 		$('.fb-post').SocialPost({ Count: '1', UID: '226213847556371' });
+		
+		var images = ['intro-bg.jpg','macbook-mpbeta.jpg','intro-bg.jpg','8.jpg','macbook-mpbeta.jpg','9.jpg','intro-bg.jpg'];
+		$('.full-width-image-1').css({'background': 'url(images/' + images[Math.floor(Math.random() * images.length)] + ') no-repeat center center fixed', 'background-size':'cover'});
 	});
