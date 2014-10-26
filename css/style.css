@@ -121,6 +121,12 @@ hr {
 	bottom: 100px;
 }
 
+@media (max-width: 991px) {
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 18px !important;
+    }
+}
+
 @media (max-width: 768px) {
 	.full-width-image-1 {
 		margin-top: 0 !important;

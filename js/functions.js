@@ -111,7 +111,7 @@ $(function() {
 			}
 		});
 		
-		$('.message-box').css({'marginTop':$(window).height()*0.2});
+		$('.message-box').css({'marginTop':$(window).height()*0.15});
 
 		$('.home-slider').flexslider({
 			animation: "slide",
